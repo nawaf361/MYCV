@@ -4,85 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="هذا موقعي يمثل سيرتي الذاتية">
-  <meta name="keywords" content="nawaf,computer seince">
-  <link rel="icon" href="wall-murals-fire-alphabet-letter-n.jpg">
-    <title>سيرتي الذاتية</title>
-  <style>
+    <meta name="description" content="هذا موقعي يمثل سيرتي الذاتية"> <!-- Description of the site -->
+    <meta name="keywords" content="nawaf,computer science"> <!-- Keywords for SEO -->
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAACkpKRjY2P39/f6+vrs7OxsbGyLi4vR0dHw8PBmZmbX19fm5uZwcHB0dHSYmJg+Pj7f398TExMmJiaxsbG4uLgMDAxDQ0N9fX3KysqqqqpaWlosLCySkpIhISE0NDQaGhrBwcFUVFRISEiCgoJkdBfmAAAElUlEQVR4nO3d61LiQBAF4BkJCoIgoNy8ALq+/yvuqivLJZM5PTPU5nT1+b3Vlc+l0nNL4pzFYrFYLBaLxWKxWCwWi8VisVgsFovF8l/T7406dblZzW9za99djQfnlUe9fokLB7Ne+nAWr1m1q3Gw8nJd6PqjuW/wfWZSpdeezpoq35dDNOUqAvxD7KbWvo5UvioJCWUaBXr/kVr8PVZ5WpISyA0g9MO02v1o4ZuymLrEfkffeUgrPopXvi7LqckaEibeExpvM9+5fM94woT+LqU4UPepNOgs8Tvpd54TaldA3cvfTVGhf5TXJhN6+fCNTSi/sbMJvXgYSSd8kA7e6IS+J6zNJ5SOIgmFW1ltQqHwehiFsoEypbAjqU0p9HNBbU7hTLBowyn0Y7w2qVAwZ2UVvsCDN1ahh5eIaYXw4I1XuARr8wrR5SNiIbiiwSwcQLWZhdjgjVq4QQZv1EJoO4pbiGxHkQu38drkQmA7il0Y346iF76rF0a3o/iFPtIUFQgj21EKhP5NvfCl8XeqQdi8HaVC2LiioUO4VS9sukQlwobBmxZh+CyRFmF4RUON0IeW+fUIQ9tReoShs0SKhNv636kiYWA7SpOwfvCmSjhRL6zdjtIlrDtLpExYc5ZImbBmRUObcHHWFLUJ/Uq98OwskT7haVPUJzzdjlIoPFnRoBFuoUcUv/KLU/iCPaP4laPtKBrhzr3ixMOzRDTCmes+wMLD7SgioXuDhYeDty6LcOGAh7L32ZAK72DhwVkiGqH//HeCm83+LBGXsMJvNvsDtlxCyc1mf9VcQtfBiT+DNzLhLS782Y4iE0oG6W+cQjeBhbMupzD+qpJ9PjiFboUTh5xCZCj9N0tOoZvjxM9LX7AIDxZCn3FixSkUjMDH0Bt4WieMvvrsIH23YxS6LSycuA2lcAgL/Rz4a7RDeHyINPyawNNsaP4Pj4UVcIfE00ahpCmSCiVNkVQoaIqkQklTJBUKmiKrUDBTJBVKZoqkwmqnXVisKbZXKNirYRUKNoZJhYXOOLRZKFg+ZRUWaYqtFhZpiu0WIvuD3MISTbHlwgIzxbYL82eKbRfmzxRbL3Qv6oWC5VNSoftQL8ycKRIIM5sigzCvKVIIBQdtSIVZTZFDmDNTJBFmNEUSYUZTZBEKDtqQCiWnT0mFyU2RR5g6U+QRpi6fEgld02cidQjTmiKTMG35lErYTTloQyVMaopcQskjGaTChKZIJkxoimxC+UEbOqG4KdIJxTNFPqHgOUVSobQpEgqFM0VGoWz5lFEIf0SZVyiaKXIKJU2RU+h66oXII13kQrwpsgrdQL0QPn1KK4RnirxCdE+RWDhtixAZYqVVxmaK4IcGM7KOX8QurXIFPF8p+W5raoCbnuD7uEeBmqLoM9hpib9QL/nPDLyrb1SSEkj0jhD+9kEswEwR/WhrViJ300XG7yj6O738nfQrjQd+dll/5cdmYPzjdIWyDk9Zx0m98F+GDY9HLQMfHLhI+r1R5yyD1VP083jxDF/H56U7nVHv8n3CYrFYLBaLxWKxWCwWi8VisVgsFovFYmnMb+ILVWXrEDyfAAAAAElFTkSuQmCC"> <!-- Favicon for the site -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <title>سيرتي الذاتية</title> <!-- Title of the page -->
+    <style>
         body {
-            background-color: beige;
-            color: brown;
-            font-family: Arial, sans-serif;
+            background-color: beige; 
+            color: brown; 
+            font-family: 'Open Sans', sans-serif;
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        .dark-mode {
+            background-color: #121212; 
+            color: #e0e0e0; 
         }
         table {
-            margin: auto;
-            width: 45%;
-            border: 1px solid brown;
+            margin: auto; 
+            width: 45%; 
+            border: 1px solid brown; 
         }
         th, td {
-            padding: 10px;
-            text-align: left;
+            padding: 10px; 
+            text-align: left; 
         }
         h1, h3 {
-            color: brown;
+            color: brown; 
+        }
+        .dark-mode h1, .dark-mode h3 {
+            color: #e0e0e0; 
         }
         a {
-            color: brown;
-            text-decoration: none;
+            color: brown; 
+            text-decoration: none; 
+        }
+        .dark-mode a {
+            color: #0af; 
+        }
+        button {
+            margin: 20px; 
+            padding: 10px 20px; 
+            border: none; 
+            cursor: pointer;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <table align="center", width="45%", border="1">
+    <button id="toggle-button">Dark Mode</button> 
+    <table align="center" width="45%" border="1"> 
         <tr>
             <th>
-                <h1>Nawaf Abdullah</h1>
-               
-        computer seince student
-              </th>
+                <h1>Nawaf Abdullah Alayed</h1> 
+                Computer science student 
+            </th>
         </tr>
         <td>
             <table>
-        <h3>A computer science student passionate about software development and data analysis.
-I have strong programming and problem-solving skills, and I seek to apply my knowledge in practical settings.</h3>
-                <h1>
-                    Skills
-                </h1>
+                <h3>A computer science student passionate about software development and data analysis. <!-- Introduction -->
+                I have strong programming and problem-solving skills, and I seek to apply my knowledge in practical settings.</h3>
+                
+                <h1>Skills</h1> <!-- Skills section -->
                 <ul>
-                    <li>Programing Languages: Python, C++, Java</li>
-                    <li>Web development: Html</li>
-                    <li>Graphic designing:Canva</li>
+                    <li>Programming Languages: Python, C++, Java</li>
+                    <li>Web Development: HTML</li>
+                    <li>Graphic Designing: Canva</li>
                 </ul>
-                <h1>Languages</h1>
+                
+                <h1>Languages</h1> <!-- Languages section -->
                 <ul>
                     <li>English</li>
                     <li>Arabic</li>
                 </ul>
-                <h1>Education</h1>
+                
+                <h1>Education</h1> <!-- Education section -->
                 <table border="1" align="center">
                     <tr style="background-color:beige; color:brown">
                         <th>University</th>
-                        <th>Passing years</th>
+                        <th>Passing Years</th>
                         <th>GPA</th>
                     </tr>
                     <tr>
-                        <td>qassim University</td>
+                        <td>Qassim University</td>
                         <td>2021</td>
-                        <td>4.00</td>
+                        <td>4.02</td>
                     </tr>
-                    
                 </table>
-               
-        <h1>contact</h1>
-        <u1>
-          <l1>Email:pcnawaf7@gmail.com</l1> <br>
-          <l1>phone : 0501343311</l1> <br>
-          <a href="www.linkedin.com/in/
-نواف-العايد-836472353
-">Linked in</a>
-        </u1>
+                
+                <h1>Contact</h1> <!-- Contact section -->
+                <ul>
+                    <li>Email: pcnawaf7@gmail.com</li> <!-- Email -->
+                    <li>Phone: 0501343311</li> <!-- Phone number -->
+                    <li><a href="https://www.linkedin.com/in/%D9%86%D9%88%D8%A7%D9%81-%D8%A7%D9%84%D8%B9%D8%A7%D9%8A%D8%AF-836472353/">LinkedIn</a></li> <!-- LinkedIn profile link -->
+                </ul>
             </table>
         </td>
     </table>
+
+    <script>
+        // JavaScript to toggle dark mode
+        const button = document.getElementById('toggle-button');
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            button.textContent = document.body.classList.contains('dark-mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+        });
+    </script>
 </body>
 </html>
